@@ -222,13 +222,13 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .navbar-brand .logo {
-	margin-top: 10px;
+	margin-top: 0px;
 	display: inline-block;
 }
 
 .navbar-brand .logo > img {
-	max-height:40px;
-    font-weight: 400;
+	max-height:58px;
+    
 }
 
 @media only screen and (max-width: 960px) {
@@ -652,12 +652,12 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 /* -- Footer Logo -- */
 .footer-logo  .logo {
-	margin-top: 20px;
+	margin-top: 12px;
 	display: inline-block;
 }
 
 .footer-logo  .logo > img {
-	max-height:30px;
+	max-height:50px;
 }
 
 /* -- Footer Nav -- */
