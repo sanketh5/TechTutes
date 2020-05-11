@@ -30,6 +30,9 @@
         <link rel = "icon" type = "image/png" href = "./img/favicon.png">
 
     </head>
+    
+    
+    
 	<body>
 
 		<!-- Header -->
@@ -103,12 +106,12 @@
 					<div class="col-md-6">
 						<div class="contact-form">
 							<h4>Send A Message</h4>
-							<form>
+							<form method="post" action="">
 								<input class="input" type="text" name="name" placeholder="Name">
 								<input class="input" type="email" name="email" placeholder="Email">
 								<input class="input" type="text" name="subject" placeholder="Subject">
 								<textarea class="input" name="message" placeholder="Enter your Message"></textarea>
-								<button class="main-button icon-button pull-right">Send Message</button>
+								<button class="main-button icon-button pull-right" onclick="send()">Send Message</button>
 							</form>
 						</div>
 					</div>
@@ -208,8 +211,28 @@
 		<!-- preloader -->
 		<div id='preloader'><div class='preloader'></div></div>
 		<!-- /preloader -->
+<!---------------contact------------------->
+<script type="text/javascript">
+  function send() {
+    var link = 'mailto:sankethdesuwar5@gmail.com'+'?subject=Message from '
+             +escape(document.getElementById('email').value)
+             +'&body='+escape(document.getElementById('subject').value);
+    window.location.href = link;
+      
+      
+   
+      
+      var link = "mailto:me@example.com"
+         + "?cc=myCCaddress@example.com"
+         + "&subject=" + escape("This is my subject")
+         + "&body=" + escape(document.getElementById('Body').value)
+     ;
 
-
+     window.location.href = link;
+      
+      
+}
+</script>
 		<!-- jQuery Plugins -->
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
